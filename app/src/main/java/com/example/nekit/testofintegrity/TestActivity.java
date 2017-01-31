@@ -32,8 +32,9 @@ public class TestActivity extends AppCompatActivity {
         btnYes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                count += TestModel.testArray().get(nextQuestions).getToCounterYes();
                 countMethod();
-                count++;
+
             }
         });
 
@@ -42,7 +43,9 @@ public class TestActivity extends AppCompatActivity {
         btnNo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                count += TestModel.testArray().get(nextQuestions).getToCounterNo();
                 countMethod();
+
             }
         });
 
