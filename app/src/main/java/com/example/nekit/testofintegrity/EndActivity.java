@@ -29,7 +29,7 @@ public class EndActivity extends AppCompatActivity {
             case 3:
             case 4:
             case 5:
-                txtEnd.setText(R.string.result1);
+                txtEnd.setText(getExtra + "/34 Очень низкий показатель по шкале \"Честность\". Свидетельствует о ярко выраженной склонности ко лжи, приукрашиванию себя. Также может свидетельствовать о низких показателях социального интеллекта.");
                 TestActivity.count = 0;
                 break;
             case 6:
@@ -40,7 +40,7 @@ public class EndActivity extends AppCompatActivity {
             case 11:
             case 12:
             case 13:
-                txtEnd.setText(R.string.result2);
+                txtEnd.setText(getExtra + "/34 Низкий показатель по шкале \"Честность\". Свидетельствует о значительной склонности ко лжи. Любит приукрашивать себя, своё поведение.");
                 TestActivity.count = 0;
                 break;
             case 14:
@@ -59,7 +59,7 @@ public class EndActivity extends AppCompatActivity {
             case 27:
             case 28:
             case 29:
-                txtEnd.setText(R.string.result3);
+                txtEnd.setText(getExtra + "/34 Нормальный результат. Склонность ко лжи не выявлена. Может быть, изредка склонен приукрашивать себя, своё поведение, но в пределах нормы.");
                 TestActivity.count = 0;
                 break;
             case 30:
@@ -67,7 +67,7 @@ public class EndActivity extends AppCompatActivity {
             case 32:
             case 33:
             case 34:
-                txtEnd.setText(R.string.result4);
+                txtEnd.setText(getExtra + "/34 Высокий результат по шкале \"Честность\". Такой высокий результат может быть связан не только с высокой личностной честностью, но и следствием других причин: преднамеренного искажения ответов, очень неверной самооценки.");
                 TestActivity.count = 0;
                 break;
             default:
