@@ -62,12 +62,12 @@ public class TestActivity extends AppCompatActivity {
         if (nextQuestions == 33) {
             isExit(true);
         }
-        nextQuestions = (nextQuestions + 1) % Test.testArray().size();
+        nextQuestions = (nextQuestions + 1) % TestModel.testArray().size();
         updateTest();
     }
 
     private void updateTest() {
-        txtText.setText(Test.testArray().get(nextQuestions).getQuestion());
+        txtText.setText(TestModel.testArray().get(nextQuestions).getQuestion());
     }
 
     private void isExit(boolean b) {
